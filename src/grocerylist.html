@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grocery List | Meal Finder</title>
+  <link rel="stylesheet" href="grocerylist.css">
+</head>
+<body>
+    <header class="header">
+        <a href="index.html" class="btn" id="see-planner-btn">Home</a>
+        <a href="mealplanner.html" class="btn" id="see-planner-btn">Meal Planner</a>
+        <a href="grocerylist.html" class="btn" id="see-planner-btn">Grocery List</a>
+        <a href="category.html" class="btn" id="see-planner-btn">Category</a>
+      </header>
+    <div class="container">
+        <div class="form-container">
+            <h1>Add Ingredient</h1>
+            <form id="ingredient-form">
+                <input type="text" id="ingredient-input" placeholder="Enter ingredient" required>
+                <button type="submit">Add</button>
+            </form>
+            <button id="clear-list-btn">Clear List</button>
+        </div>
+        
+        <div class="grocery-list-container">
+            <h1>Grocery List</h1>
+            <ul id="grocery-list"></ul>
+        </div>
+    </div>
+
+    <script src="grocerylist.js"></script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Homepage | Meal Finder</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <header class="header">
+    <a href="index.html" class="btn" id="see-planner-btn">Home</a>
+    <a href="mealplanner.html" class="btn" id="see-planner-btn">Meal Planner</a>
+    <a href="grocerylist.html" class="btn" id="see-planner-btn">Grocery List</a>
+    <a href="category.html" class="btn" id="see-planner-btn">Category</a>
+  </header>
+
+  <div class="container">
+    <div class="meal-wrapper">
+      <div class="meal-search">
+        <h2 class="title">Find Meals For Your Ingredients</h2>
+        <blockquote>Real food doesn't have ingredients, real food is ingredients.<br><cite>- Jamie Oliver</cite></blockquote>
+
+        <div class="meal-search-box">
+          <!-- search button -->
+          <input type="text" class="search-control" placeholder="Enter food category" id="search-input">
+          <button type="submit" class="search-btn btn" id="search-btn">
+            <i class="fas fa-search"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="meal-result">
+        <div class="sort-ingredients">
+          <label for="ingredient-select">Sort by Ingredients:</label>
+          <select id="ingredient-select">
+              <option value="">Select an ingredient</option>
+              <!-- list of options for ingredients -->
+          </select>
+          <button class="btn" id="sort-btn">Sort</button>
+        </div>
+        <h2 class="title">Your Search Results:</h2>
+        <div id="meal">
+          <!-- meal items searched -->
+        </div>
+      </div>
+
+      <div class="meal-details">
+        <button type="button" class="btn recipe-close-btn" id="recipe-close-btn">
+          <i class="fas fa-times"></i>
+        </button>
+
+        <div class="meal-details-content">
+          <!-- recipe details -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
